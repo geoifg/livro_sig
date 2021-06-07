@@ -1,3 +1,4 @@
+output_dir: "docs"
 book_filename: "livro_sig"
 delete_merged_file: true
 language:
