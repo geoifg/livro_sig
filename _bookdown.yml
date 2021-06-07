@@ -1,0 +1,9 @@
+book_filename: "livro_sig"
+delete_merged_file: true
+language:
+  label:
+    fig: 'Figura '
+    tab: 'Tabela '
+    eq: 'Equação '
+  ui:
+    chapter_name: "Capítulo"

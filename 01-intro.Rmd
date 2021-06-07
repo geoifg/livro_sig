@@ -1,0 +1,68 @@
+# Visão Geral de um SIG {#visao}
+
+:::demo
+Há pelo menos três grandes maneiras de utilizar um SIG [@camaraqueiroz2001]:
+
+-	como ferramenta para produção de mapas;
+
+-	como suporte para análise espacial de fenômenos;
+
+-	como um banco de dados geográficos, com funções de armazenamento e recuperação de informação espacial.
+
+
+:::
+
+A facilidade de trabalhar com a informação geográfica em ambiente SIG, seja na sua criação e/ou edição, tornou o trabalho dos cartógrafos mais facilitada, constituindo uma importante ferramenta tanta na cartografia sistemática, quanto na cartografia temática. Com as ferramentas robustas de visualização, simbologia e layout, mapas têm sido produzidos tanto para saídas gráficas em meio digital e para impressão, com destaque para a criação de webmaps, onde os mapas são acessados via web interativamente com o usuário.
+
+O que torna o SIG um ambiente poderoso de trabalho em relação a pacotes dedicados a desenho (p.ex. CAD) é sua capacidade de análise espacial. Baseado em inúmeras ferramentas é possível cruzar, interpolar e agregar dados para se chegar novas informações, tendo a inferência geográfica como um grande campo a ser explorado. A disciplina de SIG-2 do nosso curso abordará em mais detalhe esse conteúdo.
+
+Por fim, e não menos importante, deve-se destacar a capacidade de trabalhar com SIG como um ambiente gerenciamento de banco de dados geográficos. Em tempos, onde há um volume considerável de informações, trabalhar com banco de dados é imprescindível, se for dados geográficos, um banco de dados geográficos é ainda mais relevante. Os softwares de SIG permitem gerenciar esses bancos de dados com funções de armazenamento e recuperação da informação que facilitam e muito quando trabalhamos com grande quantidade de dados.
+
+Nesse sentido, é possível indicar que as principais características de SIG são:
+
+-	Inserir e integrar, numa única base de dados, informações espaciais provenientes de dados cartográficos, dados censitários e cadastro urbano e rural, imagens de satélite, redes e modelos numéricos de terreno (informações geográficas);
+
+
+:::demo
+
+```{r fig1, echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./images/sig_cad.png")
+```
+
+O SIG oferece mecanismos para combinar as várias informações, através de algoritmos de manipulação e análise, bem como para consultar, recuperar, visualizar e plotar o conteúdo da base de dados georreferenciados [@camaraqueiroz2001].
+
+-	A diferença fundamental é na diversidade de dados utilizados para a realização de suas tarefas, sendo que um SIG utiliza muito mais dados do que um CAD;
+
+-	O SIG realiza operações com dados vetoriais e matriciais (imagens "raster"), enquanto os CADs se limitam a trabalhar com dados vetoriais;
+
+-	SIG tem capacidade de tratar as relações espaciais entre os objetos geográficos. Denota-se por topologia a estrutura de relacionamentos espaciais (vizinhança, proximidade, pertinência);
+
+-	O CAD é usado para desenhos de caráter técnico que variam desde projetos de aviões até projetos de circuitos integrados, podendo ser usado para geração de cartas;
+
+•	Geralmente nas aplicações de CAD, os desenhos não possuem atributos descritivos, mas apenas propriedades gráficas.
+
+Fonte: http://www.dpi.inpe.br/spring/portugues/tutorial/geracao.html
+:::
+
+# Exemplo
+
+You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
